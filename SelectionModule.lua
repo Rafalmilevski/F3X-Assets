@@ -1,6 +1,6 @@
 -- Libraries
 local RbxUtility = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafalmilevski/F3X-Assets/refs/heads/main/RbxUtility.lua"))()
-local History = require(script.Parent.HistoryModule);
+local History = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafalmilevski/F3X-Assets/refs/heads/main/HistoryModule.lua"))();
 local Support = loadstring(game:HttpGet("https://raw.githubusercontent.com/F3XTeam/RBX-Support-Library/refs/heads/master/SupportLibrary.lua"))()
 
 -- Core selection system
