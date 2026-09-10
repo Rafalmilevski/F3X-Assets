@@ -1,5 +1,5 @@
 local Support = loadstring(game:HttpGet("https://raw.githubusercontent.com/F3XTeam/RBX-Support-Library/refs/heads/master/SupportLibrary.lua"))()
-local RbxUtility = LoadLibrary 'RbxUtility';
+local RbxUtility = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafalmilevski/F3X-Assets/refs/heads/main/RbxUtility.lua"))()
 
 local Cheer = {};
 
