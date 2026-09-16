@@ -1,3 +1,6 @@
+if not env.isfolder("F3X") then
+	return
+end
 -- Services
 MarketplaceService = Game:GetService 'MarketplaceService';
 HttpService = Game:GetService 'HttpService';
@@ -5,8 +8,8 @@ Workspace = Game:GetService 'Workspace';
 
 -- References
 Tool = nil;
-Support = loadstring(game:HttpGet("https://raw.githubusercontent.com/F3XTeam/RBX-Support-Library/refs/heads/master/SupportLibrary.lua"))(),
-RegionModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafalmilevski/F3X-Assets/refs/heads/main/RegionByAxisAngle.lua"))()
+Support = loadstring(readfile("F3X/Modules/SupportLibrary.lua"))()
+RegionModule = loadstring(readfile("F3X/Modules/Region.lua")()
 
 -- Initialize the security module
 Security = {};
