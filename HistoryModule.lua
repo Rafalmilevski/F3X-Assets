@@ -2,7 +2,7 @@ if not env.isfolder("F3X") then
 	return
 end
 -- Libraries
-local RbxUtility = env.readfile("F3X/Modules/RbxUtility.lua")
+local RbxUtility = loadstring(env.readfile("F3X/Modules/RbxUtility.lua"))
 
 History = {
 
