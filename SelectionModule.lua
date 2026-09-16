@@ -1,7 +1,10 @@
+if not env.isfolder("F3X") then
+	return
+end
 -- Libraries
-local RbxUtility = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafalmilevski/F3X-Assets/refs/heads/main/RbxUtility.lua"))()
-local History = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafalmilevski/F3X-Assets/refs/heads/main/HistoryModule.lua"))();
-local Support = loadstring(game:HttpGet("https://raw.githubusercontent.com/F3XTeam/RBX-Support-Library/refs/heads/master/SupportLibrary.lua"))()
+local RbxUtility = env.readfile("F3X/Modules/RbxUtility.lua")
+local History = env.readfile("F3X/Modules/History.lua")
+local Support = env.readfile("F3X/Modules/Support.lua")
 
 -- Core selection system
 Selection = {};
