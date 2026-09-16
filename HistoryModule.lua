@@ -1,5 +1,8 @@
+if not env.isfolder("F3X") then
+	return
+end
 -- Libraries
-local RbxUtility = loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafalmilevski/F3X-Assets/refs/heads/main/RbxUtility.lua"))()
+local RbxUtility = env.readfile("F3X/Modules/RbxUtility.lua")
 
 History = {
 
